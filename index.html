@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Twas the Night Before Christmas' Vocabulary</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use the Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'christmas-red': '#B91C1C',
+                        'christmas-green': '#10B981',
+                        'snow-white': '#F9FAFB',
+                        'charcoal': '#1F2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for a festive look */
+        .card-bg {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .text-shadow-light {
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+        }
+        .header-bg {
+            background-image: url('https://placehold.co/1200x200/B91C1C/FFFFFF?text=A+Visit+from+St.+Nicholas');
+            background-size: cover;
+            background-position: center;
+        }
+        .list-style-custom {
+            list-style-type: '🎄';
+        }
+    </style>
+</head>
+<!-- UPDATED: Added a gradient background for the "art" request -->
+<body class="bg-gradient-to-br from-christmas-red/50 to-charcoal font-sans min-h-screen p-4 sm:p-8">
+
+    <!-- Tooltip Overlay Structure (Hidden by default) -->
+    <div id="tooltip" class="absolute z-50 p-2 text-xs bg-charcoal text-snow-white rounded-lg shadow-2xl pointer-events-none opacity-0 transition-opacity duration-200 w-48 text-left">
+        <!-- Content will be injected here -->
+    </div>
+
+    <div class="max-w-6xl mx-auto rounded-xl overflow-hidden card-bg">
+
+        <!-- Header Section -->
+        <header class="header-bg py-10 sm:py-16 flex items-center justify-center">
+            <div class="bg-charcoal/80 p-4 sm:p-6 rounded-lg text-center">
+                <h1 class="text-3xl sm:text-5xl font-serif font-extrabold text-snow-white tracking-tight">
+                    'Twas the Night Before Christmas
+                </h1>
+                <p class="text-lg sm:text-xl text-christmas-green font-medium mt-2">
+                    Poem Glossary and Historical Terms
+                </p>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="p-6 sm:p-10 lg:grid lg:grid-cols-3 lg:gap-8">
+
+            <!-- Section 1: Detailed Definitions (Col Span 2) -->
+            <section class="lg:col-span-2 mb-8 lg:mb-0">
+                <h2 class="text-2xl sm:text-3xl font-bold text-christmas-red mb-6 border-b-2 border-christmas-green pb-2">
+                    Historical Terminology Explained
+                </h2>
+
+                <div class="space-y-6">
+                    <!-- Sugar-plums -->
+                    <div class="p-4 rounded-lg bg-snow-white border-l-4 border-christmas-green shadow-md">
+                        <h3 class="text-xl font-bold text-charcoal">Sugar-plums</h3>
+                        <p class="text-sm italic text-gray-500 mb-2">"...While visions of **sugar-plums** danced in their heads;"</p>
+                        <p class="text-gray-700">A type of hard sugar candy or **comfit** popular from the 17th to 19th centuries. They were typically made by coating a seed (like caraway or anise) or a nut (like an almond) with many layers of hardened sugar syrup. They were luxury treats for special occasions, and often did not contain any actual plums.</p>
+                    </div>
+
+                    <!-- Kerchief -->
+                    <div class="p-4 rounded-lg bg-snow-white border-l-4 border-christmas-green shadow-md">
+                        <h3 class="text-xl font-bold text-charcoal">'Kerchief</h3>
+                        <p class="text-sm italic text-gray-500 mb-2">"And mamma in her **'kerchief**, and I in my cap,"</p>
+                        <p class="text-gray-700">Short for **head-kerchief** (a scarf or covering worn on the head, often tied under the chin). In the 19th century, women wore kerchiefs and men wore caps to bed to stay warm in cold, drafty houses, as a form of insulation and also to keep hair clean and tidy.</p>
+                    </div>
+
+                    <!-- Peddler -->
+                    <div class="p-4 rounded-lg bg-snow-white border-l-4 border-christmas-green shadow-md">
+                        <h3 class="text-xl font-bold text-charcoal">Peddler</h3>
+                        <p class="text-sm italic text-gray-500 mb-2">"And he looked like a **peddler**, just opening his pack."</p>
+                        <p class="text-gray-700">A **traveling salesman** or *itinerant vendor*. This person carried a large pack of goods (notions, tools, or small toys) on their back to sell in remote areas. The narrator compares St. Nicholas, with his bundle of toys, to this common historical figure.</p>
+                    </div>
+
+                    <!-- Coursers -->
+                    <div class="p-4 rounded-lg bg-snow-white border-l-4 border-christmas-green shadow-md">
+                        <h3 class="text-xl font-bold text-charcoal">Coursers</h3>
+                        <p class="text-sm italic text-gray-500 mb-2">"More rapid than eagles his **coursers** they came,"</p>
+                        <p class="text-gray-700">A poetic or older term for **swift horses** or, in this context, the **reindeer** that pull the sleigh. The term emphasizes their speed, power, and spirited nature.</p>
+                    </div>
+
+                    <!-- Ere -->
+                    <div class="p-4 rounded-lg bg-snow-white border-l-4 border-christmas-green shadow-md">
+                        <h3 class="text-xl font-bold text-charcoal">Ere</h3>
+                        <p class="text-sm italic text-gray-500 mb-2">"But I heard him exclaim, **ere** he drove out of sight,"</p>
+                        <p class="text-gray-700">An archaic word that simply means **"before."** St. Nicholas gave his final exclamation ("Happy Christmas to all...") *before* he disappeared. |</p>
+                    </div>
+
+                    <!-- Lustre -->
+                    <div class="p-4 rounded-lg bg-snow-white border-l-4 border-christmas-green shadow-md">
+                        <h3 class="text-xl font-bold text-charcoal">Lustre</h3>
+                        <p class="text-sm italic text-gray-500 mb-2">"Gave the **lustre** of mid-day to objects below."</p>
+                        <p class="text-gray-700">A poetic word for **shine**, **glow**, or **brilliance**. The light of the moon reflecting on the fresh snow makes the night world as bright as the middle of the day.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Full Categorized Term List (Col Span 1) -->
+            <section class="lg:col-span-1 lg:border-l-2 lg:border-christmas-green lg:pl-6">
+                <h2 class="text-2xl sm:text-3xl font-bold text-christmas-red mb-6 border-b-2 border-christmas-green pb-2">
+                    All Poem Terms (Categorized)
+                </h2>
+
+                <div class="space-y-6">
+                    <!-- Category: People/Characters -->
+                    <div class="p-4 rounded-lg bg-christmas-red/10 border border-christmas-red/50">
+                        <h3 class="text-xl font-bold text-charcoal mb-2 flex items-center">
+                            <span class="mr-2 text-christmas-red">🎅</span> People & Characters
+                        </h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 pl-4 list-style-custom">
+                            <li>St. Nicholas (St. Nick)</li>
+                            <li>The children</li>
+                            <li>Mamma</li>
+                            <li>I (The narrator)</li>
+                            <li>Old elf (Santa Claus)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: Santa's Reindeer -->
+                    <div class="p-4 rounded-lg bg-christmas-green/10 border border-christmas-green/50">
+                        <h3 class="text-xl font-bold text-charcoal mb-2 flex items-center">
+                            <span class="mr-2 text-christmas-green">🦌</span> Santa's Reindeer
+                        </h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 pl-4 list-style-custom">
+                            <li>Dasher</li>
+                            <li>Dancer</li>
+                            <li>Prancer</li>
+                            <li>Vixen</li>
+                            <li>Comet</li>
+                            <li>Cupid</li>
+                            <li>Donner (or Donder)</li>
+                            <li>Blitzen</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: Objects & Places -->
+                    <div class="p-4 rounded-lg bg-christmas-red/10 border border-christmas-red/50">
+                        <h3 class="text-xl font-bold text-charcoal mb-2 flex items-center">
+                            <span class="mr-2 text-christmas-red">🎁</span> Objects & Setting
+                        </h3>
+                        <!-- UPDATED: Added ID and data-info attributes for hover functionality -->
+                        <ul id="objects-list" class="list-disc list-inside space-y-1 text-gray-700 pl-4 list-style-custom">
+                            <li data-info="Hanging by the chimney with care, awaiting gifts from St. Nicholas.">Stockings</li>
+                            <li data-info="The miniature vehicle Santa uses, drawn by eight tiny reindeer.">Miniature sleigh</li>
+                            <li data-info="The sack or bag containing all the presents.">Bundle of toys</li>
+                            <li data-info="St. Nick’s pipe which, when smoked, created a smoky ring like a wreath.">Stump of a pipe</li>
+                            <li data-info="The ring of smoke from Santa's pipe.">Wreath (of smoke)</li>
+                            <li data-info="The vertical shaft used to carry smoke and where Santa enters the house.">Chimney</li>
+                            <li data-info="The roof of the house and the grass outside.">House-top / Lawn</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category: Actions & Attributes -->
+                    <div class="p-4 rounded-lg bg-christmas-green/10 border border-christmas-green/50">
+                        <h3 class="text-xl font-bold text-charcoal mb-2 flex items-center">
+                            <span class="mr-2 text-christmas-green">✨</span> Actions & Attributes
+                        </h3>
+                        <!-- NEW: Added ID and data-info attributes for hover functionality -->
+                        <ul id="actions-list" class="list-disc list-inside space-y-1 text-gray-700 pl-4 list-style-custom">
+                            <li data-info="The loud, rattling noise made by the reindeer hooves on the roof.">Clatter (sound)</li>
+                            <li data-info="Santa's clothes were dull and damaged, not new or shiny.">Tarnished (clothes)</li>
+                            <li data-info="Black residue from the chimney covered Santa's clothes.">Soot (on clothes)</li>
+                            <li data-info="His eyes sparkled brightly, indicating cheerfulness.">Twinkled (eyes)</li>
+                            <li data-info="His mouth was slightly comical or mischievous.">Droll (mouth)</li>
+                            <li data-info="A term of endearment for Santa, emphasizing his happy and magical nature.">Jolly old elf</li>
+                            <li data-info="The spirited, quick movements of the reindeer on the roof.">Prancing and pawing (of hooves)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-4 bg-charcoal text-snow-white text-sm flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4">
+            <p>Follow us on Instagram for more Vocab Pills like this...</p>
+
+            <!-- Rotating CTA Button moved to footer -->
+            <a id="ctaButton" href="https://www.instagram.com/zvacademy_vzla" target="_blank" 
+                class="px-3 py-1 bg-christmas-red text-snow-white font-semibold 
+                       rounded-full shadow-md hover:bg-christmas-red/80 
+                       transition duration-300 text-xs whitespace-nowrap">
+                Happy Christmas, and to all a Good-Night!
+            </a>
+        </footer>
+
+    </div>
+
+    <script>
+        const ctaButton = document.getElementById('ctaButton');
+        // List of phrases, alternating between traditional ('Happy Christmas') and modern slang
+        const phrases = [
+            "Happy Christmas, and to all a Good-Night!", // Traditional
+            "Merry Xmas, Fam!", // Modern 1
+            "Holiday Vibes, Peace Out!", // Modern 2
+            "Lit Christmas, Y'all!", // Modern 3
+        ];
+        let currentPhraseIndex = 0;
+
+        function updateCtaText() {
+            // Cycle to the next phrase
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+            // Update the button text
+            ctaButton.textContent = phrases[currentPhraseIndex];
+        }
+
+        // Cycle the text every 3 seconds
+        setInterval(updateCtaText, 3000);
+
+
+        // --- Tooltip Functionality (Now covering both lists) ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const tooltip = document.getElementById('tooltip');
+            const objectsList = document.getElementById('objects-list');
+            const actionsList = document.getElementById('actions-list'); // NEW: Reference the new list
+
+            // Get all list items that have a data-info attribute from both lists
+            const listItems = [
+                ...objectsList.querySelectorAll('li[data-info]'),
+                ...actionsList.querySelectorAll('li[data-info]') // NEW: Include items from the second list
+            ];
+
+            listItems.forEach(item => {
+                // Add a visual indicator that the item is interactive
+                item.classList.add('cursor-help'); 
+                item.addEventListener('mouseenter', handleMouseEnter);
+                item.addEventListener('mouseleave', handleMouseLeave);
+            });
+
+            function handleMouseEnter(event) {
+                const item = event.currentTarget;
+                const info = item.getAttribute('data-info');
+                
+                // 1. Update content
+                tooltip.textContent = info;
+                
+                // 2. Position the tooltip
+                const rect = item.getBoundingClientRect();
+                
+                // Calculate position: above and centered relative to the item
+                // Use setTimeout to ensure tooltip.offsetWidth is calculated after content injection
+                setTimeout(() => {
+                    let top = rect.top + window.scrollY - tooltip.offsetHeight - 10; // 10px above
+                    let left = rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2);
+
+                    // Basic viewport boundary checks (preventing horizontal overflow)
+                    if (left < 10) {
+                        left = 10;
+                    } else if (left + tooltip.offsetWidth > window.innerWidth - 10) {
+                        left = window.innerWidth - tooltip.offsetWidth - 10;
+                    }
+                    
+                    // Basic viewport boundary checks (preventing vertical overflow upwards)
+                    if (top < window.scrollY + 10) {
+                        top = rect.bottom + window.scrollY + 10; // If it hits the top, place it below the item
+                    }
+
+                    // Apply position and show
+                    tooltip.style.top = `${top}px`;
+                    tooltip.style.left = `${left}px`;
+                    tooltip.style.opacity = '1';
+                }, 0);
+            }
+
+            function handleMouseLeave() {
+                // Hide the tooltip after a small delay for smoother transition
+                tooltip.style.opacity = '0';
+            }
+        });
+    </script>
+</body>
+</html>
